@@ -34,13 +34,16 @@ declare module "react-native-fcm" {
             body: string;
             icon: string;
         };
-        fcm: {
+        fcm?: {
             action?: string;
             tag?: string;
             icon?: string;
             color?: string;
             body: string;
             title?: string;
+        };
+        aps?: {
+            alert: string | { title?: string; body?: string; }
         };
         local_notification?: boolean;
         _notificationType: string;
